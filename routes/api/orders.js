@@ -13,7 +13,7 @@ router.get('/', orderController.getAllOrders)
 
 router.post('/', validateBody(ordersSchemas.orderAddSchema), orderController.addOrder);
 
-router.get('/specific', orderController.getSpecificOrders);
+router.post('/specific',validateBody(ordersSchemas.orderSpecificSchema), orderController.getSpecificOrders);
 
 
 module.exports = router

@@ -17,11 +17,15 @@ const orderAddSchema = Joi.object({
         ),
         
     });
-
+const orderSpecificSchema = Joi.object({
+  email:Joi.string().required(),
+  phone:Joi.string().required(),
+})
 
 
   const schemas = {
     orderAddSchema,
+    orderSpecificSchema
 
   }
 
