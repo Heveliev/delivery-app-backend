@@ -30,7 +30,8 @@ const orderSchema = new Schema({
         require: true,
     },
     order: [{
-        _id:false,
+        _id:{ type: String,
+            required: [true, 'Set id for product'],},
         name:{ 
             type: String,
             required: [true, 'Set name for product'],

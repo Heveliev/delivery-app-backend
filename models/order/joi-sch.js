@@ -9,6 +9,7 @@ const orderAddSchema = Joi.object({
         totalPrice:Joi.number().required(),
         currency:Joi.string().valid("$").default("$"),
         order:Joi.array().items(Joi.object({
+          _id: Joi.string().require(),
             price: Joi.number().required(),
             name:Joi.string().required(),
             amount:Joi.number().required(),
