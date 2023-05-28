@@ -1,7 +1,13 @@
 # delivery-app-backend
 
 If you need to run the project locally you should do:
-1. Install npm i dependencies;
+1. Install npm i or these packages  (    
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "mongoose": "^7.2.1",
+    "morgan": "^1.10.0") dependencies;
 2. Create a folder .env;
 3. Contact me https://t.me/AHeveliev to get the key to the database or create your own database according to the example;
 4. Run the project npm start.
